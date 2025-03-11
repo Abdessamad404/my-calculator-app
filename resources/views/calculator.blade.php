@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculatrice</title>
-    <style>
+    <!-- <style>
         body {
             font-family: Arial, sans-serif;
             max-width: 600px;
@@ -63,8 +64,11 @@
             background-color: #ffeeee;
         }
 
-    </style>
+    </style> -->
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+
 </head>
+
 <body>
     <h2>Calculatrice</h2>
     <form action="{{ route('calculate') }}" method="POST">
@@ -87,4 +91,5 @@
     <p class="error">{{ $errors->first() }}</p>
     @endif
 </body>
+
 </html>
